@@ -5,7 +5,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h2>Login</h2>
+    <form action="/loginSucc" method="GET">
+        <div class="form-ele">
+            <div class="lab flex">
+                <label for="userName">UserName: </label>
+                <label for="password">Password: </label>
+            </div>
+            <div class="con-box flex">
+                <input type="text" name="userName" id="userName">
+                <input type="password" min="8" name="password" id="password">
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
   </body>
 </html>
