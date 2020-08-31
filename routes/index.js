@@ -10,7 +10,7 @@ router.post('/', (req,res,next) => {
   res.render('loginSucc', {
       user : req.body.userName,
       title : "login Success"
-  });
+  }); 
 });
 
 module.exports = router;
